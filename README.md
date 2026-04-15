@@ -2,7 +2,10 @@
 
 공공데이터 기반으로 전세사기 위험 신호를 지역 단위에서 탐지하고, 실제 사고 발생규모와 선행 위험지표를 함께 보여주는 Streamlit 대시보드 PoC입니다.
 
-이 저장소는 기존 DAB 프로젝트 산출물을 GitHub 포트폴리오로 설명할 수 있도록 재구성한 버전입니다. 원본 분석 파일과 발표자료를 직접 수정하지 않고, `github_ready/` 안에 실행 가능한 앱, 샘플 데이터, 문서, API 연동 골격을 분리했습니다.
+이 프로젝트는 고려대학교 2025학년도 DAB 공모전 "전세사기 고위험 지역을 식별하기 위한 종합 리스크 평가 모델 개발" 프로젝트 산출물을 GitHub로 설명할 수 있도록 재구성한 버전입니다. `github_ready/` 안에 실행 가능한 앱, 샘플 데이터, 문서, API 연동 골격을 분리했습니다.
+
+https://biz.korea.ac.kr/activities/DTB.html
+
 
 ## 1. 핵심 컨셉
 
@@ -109,18 +112,6 @@ streamlit run app/streamlit_app.py
 ```bash
 python scripts/build_dashboard_dataset.py
 ```
-
-## 8. Environment Variables
-
-```bash
-cp .env.example .env
-```
-
-`.env`에는 로컬 테스트용 API 키만 입력합니다. 실제 키가 들어간 `.env` 파일은 `.gitignore`에 의해 GitHub에 올라가지 않습니다.
-
-## 9. Portfolio Pitch
-
-이 프로젝트는 “상 수상작”으로 포장하기보다, 기존 분석 산출물을 서비스형 데이터 제품으로 보완한 포트폴리오 PoC로 설명하는 것이 적합합니다.
 
 - 실제 사고 발생규모와 선행 위험지표를 분리한 리스크 정의
 - 지역 단위 의사결정에 맞춘 대시보드 UX
